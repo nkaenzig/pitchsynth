@@ -15,11 +15,12 @@ import android.widget.RelativeLayout;
 public class Preview extends Activity {
 
 	RelativeLayout own;
-	String root = Environment.getExternalStorageDirectory().getPath() + "/" + "synthesizer";
-	String temp = root + "/temp";
+	String root = Environment.getExternalStorageDirectory().getAbsolutePath() + "/synthesizer/" ;
+//	String root = Environment.getExternalStorageDirectory().getPath() + "/" + "synthesizer";
+	String temp = root + "temp";
 	File file = new File(root);
 	File filetemp = new File(temp);
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
