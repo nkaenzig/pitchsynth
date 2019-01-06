@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Synthesizer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="act_main">Menu</string>
+    <string name="welcome">Welcome</string>
+    <string name="player">Choose Sample</string>
+    <string name="recorder">Recorder</string>
+    <string name="keyboard">Keyboard</string>
+    <string name="store">Store</string>
+    <string name="filedelete">Delete Samples</string>
+    <string name="fileexplorer">File Explorer</string>
+    <string name="fileimport">Import Sample</string>
+    <string name="importname">Store Sample</string>
+
+</resources>

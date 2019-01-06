@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.work.synthesizer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission
+     android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+     android:maxSdkVersion="21" />
+    <uses-permission
+     android:name="android.permission.READ_EXTERNAL_STORAGE"
+     android:maxSdkVersion="21" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>   
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Preview"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+           <activity
+            android:name=".MainActivity"
+            android:label="@string/act_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.mainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Recorder"
+            android:label="@string/recorder" >
+            <intent-filter>
+                <action android:name="android.intent.action.recorder" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ChooseFile"
+            android:label="@string/player" >
+            <intent-filter>
+                <action android:name="android.intent.action.choosefile" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Store"
+            android:label="@string/store" >
+            <intent-filter>
+                <action android:name="android.intent.action.store" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Keyboard"
+            android:screenOrientation="landscape"
+            android:label="@string/keyboard" >
+            <intent-filter>
+                <action android:name="android.intent.action.keyboard" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FileExplorer"
+            android:label="@string/fileexplorer" >
+            <intent-filter>
+                <action android:name="android.intent.action.fileexplorer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".FileDelete"
+            android:label="@string/filedelete" >
+            <intent-filter>
+                <action android:name="android.intent.action.filedelete" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".FileImport"
+            android:label="@string/fileimport" >
+            <intent-filter>
+                <action android:name="android.intent.action.fileimport" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ImportName"
+            android:label="@string/importname" >
+            <intent-filter>
+                <action android:name="android.intent.action.importname" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+           
+    </application>
+
+</manifest>
